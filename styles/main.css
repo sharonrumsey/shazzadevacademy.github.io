@@ -10,10 +10,10 @@ body {
   background-image: src(abstract.jpg);
 }
 h1 {
-  color: #47bcba;
-  text-align: left;
+  color: #418877;
+  text-align: center;
   border: 1px solid black;
-  background-color: #e2d8b1;
+  background-color: #F2DAC6;
   width: 400px;
   margin-left: 20px;
   font-weight: bold;
@@ -25,12 +25,15 @@ h1 {
   margin-left: 20px;
   width: 500px;
 }
-img {
+.Sharon {
   float: right;
   margin-right: 100px;
+  border-radius: 10px;
+}
+.border {
+  border-color: #418877;
   border-width: 10px;
-  border-color: #45a074;
-
+  border-style: solid;
 }
 p.links {
   margin-left: 20px;
