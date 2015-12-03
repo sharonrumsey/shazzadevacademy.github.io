@@ -1,18 +1,22 @@
-.image {
-  background-image: src="abstract.jpg";
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 body {
   font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+  background-image: src(abstract.jpg);
 }
 h1 {
-  color: #900223;
+  color: green;
   text-align: left;
   margin-left: 20px;
   font-weight: bold;
   font-size: 50px;
 }
 #main {
-  background-color: transparent;
   font-size: 20px;
   margin-top: 0px;
   margin-left: 20px;
