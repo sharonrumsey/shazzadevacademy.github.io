@@ -1,0 +1,31 @@
+body {
+    font-family: "helvetica neue";
+    color: #666;
+    padding: 0 20%;
+}
+h1 {
+  color: #418877;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #F2DAC6;
+  width: 400px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+li input {
+  display: none;
+}
+li.edit span {
+  display: none;
+}
+li.edit input {
+  display: initial;
+}
+footer {
+  margin-left: 20px;
+}
+p.links {
+  margin-left: 20px;
+  text-decoration: underline;
+}
