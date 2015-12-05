@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-  background-image: src(abstract.jpg);
+  background: "abstract.jpg";
 }
 h1 {
   color: #418877;
