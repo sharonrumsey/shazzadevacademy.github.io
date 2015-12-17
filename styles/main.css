@@ -1,0 +1,12 @@
+.image {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  height: 200px;
+  width: 770px;
+  overflow: auto;
+  margin-bottom: 20px;
+}
