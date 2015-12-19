@@ -15,6 +15,7 @@
   background-position: left top;
   text-align: center;
   font-size: 30px;
+  margin-left: 25px;
 }
 .wrapper {
   margin-bottom: 20px;
@@ -22,12 +23,6 @@
 body {
   background-color: #c0e4e8;
   
-}
-.logo {
-  display: block;
-  float: left;
-  width: 23.8%;
-  margin: 1% 0 1% 0;
 }
 .banner {
   display: block;
@@ -48,16 +43,6 @@ body {
     margin: 1% 0 1% 0%;
     width: 100%;
   }
-}
-
-
-
-.page-head {
-  color: red;
-  text-align: center;
-  font-size: 45px;
-  min-width: 80%;
-  max-width: 90%;
 }
 h2 {
   font-size: 35px;
