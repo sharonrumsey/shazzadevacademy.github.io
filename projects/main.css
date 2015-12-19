@@ -1,3 +1,23 @@
+/* For testing */
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px solid #000;
+}
+.columns {
+  min-height: 100px;
+}
+/* End for Testing */
+
+#site-header {
+  background-image: url(candles-and-towel.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  text-align: center;
+  font-size: 30px;
+}
+.wrapper {
+  margin-bottom: 20px;
+}
 body {
     font-family: "helvetica neue";
     color: #666;

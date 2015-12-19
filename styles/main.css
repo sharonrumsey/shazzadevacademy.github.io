@@ -1,12 +1,90 @@
-.image {
-  position: relative;
+
+/* For testing */
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px solid #000;
+}
+.columns {
+  min-height: 100px;
+}
+/* End for Testing */
+
+#site-header {
+  background-image: url(../images/candles-and-towel.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  text-align: center;
+  font-size: 30px;
+}
+.wrapper {
+  margin-bottom: 20px;
+}
+body {
+  background-color: #c0e4e8;
+  
+}
+.logo {
+  display: block;
+  float: left;
+  width: 23.8%;
+  margin: 1% 0 1% 0;
+}
+.banner {
+  display: block;
+  float: right;
+  width: 74.6%;
+  margin: 1% 0 1% 1.6%;
+}
+.sidebar {
+  display: block;
+  float: left;
+  clear: left;
+  width: 23.8%;
+  margin: 1% 0 1% 0;
 }
 
-.text {
-  position: absolute;
+@media only screen and (max-width: 480px) {
+  .logo, .banner, .sidebar {
+    margin: 1% 0 1% 0%;
+    width: 100%;
+  }
+}
+
+
+
+.page-head {
+  color: red;
   text-align: center;
-  height: 200px;
-  width: 770px;
-  overflow: auto;
-  margin-bottom: 20px;
+  font-size: 45px;
+  min-width: 80%;
+  max-width: 90%;
+}
+h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+
+
+}
+p {
+  font-size: 25px;
+  margin-left: 45px;
+  max-width: 80%;
+}
+/*links*/
+a {
+  color: purple;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 40px;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+* {
+box-sizing: border-box;
 }
