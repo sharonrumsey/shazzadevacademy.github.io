@@ -1,0 +1,14 @@
+body {
+  background-image: url(../images/lone-tree.jpg);
+  background-image: center center fixed;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.name-blog {
+  text
+}
