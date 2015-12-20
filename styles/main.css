@@ -1,12 +1,15 @@
 /*lines for testing*/
 .three {
   border: 5px solid #a08841;
+  border-right: 10px solid #a08841;
 }
 .nine {
   border: 5px solid #a08841;
+  border-left: 10px solid #a08841;
 }
 #site-header {
   border: 5px solid #a08841;
+  border-bottom: 10px solid #a08841;
 }
 /*From Skeleton css*/
 /* Grid
