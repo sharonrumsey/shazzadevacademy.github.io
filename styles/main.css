@@ -1,9 +1,13 @@
-/*lines for testing
-* {
-  box-sizing: border-box;
-  border: 2px solid #a08841;
-}*/
-
+/*lines for testing*/
+.three {
+  border: 5px solid #a08841;
+}
+.nine {
+  border: 5px solid #a08841;
+}
+#site-header {
+  border: 5px solid #a08841;
+}
 /*From Skeleton css*/
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -106,28 +110,22 @@
   padding: 30px;font-family: 'IM Fell Great Primer', serif;
   font-family: 'IM Fell Great Primer', serif;
 }
-.container {
-  -webkit-column-rule-width: 1px;
-   -moz-column-rule-width: 1px;
-        column-rule-width: 1px;
--webkit-column-rule-style: solid;
-   -moz-column-rule-style: solid;
-        column-rule-style: solid;
--webkit-column-rule-color: black;
-   -moz-column-rule-color: black;
-        column-rule-color: black;
-}
 body {
   background-color: #fff;
-  
 }
 h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'IM Fell Great Primer', serif;
 }
 .navigation {
-  font-size: 10px;
+  font-size: 15px;
+  border-color: red;
+}
+div {
+  -webkit-column-rule-color: #ff0000; /* Chrome, Safari, Opera */
+  -moz-column-rule-color: #ff0000; /* Firefox */
+  column-rule-color: #ff0000;
 }
 p {
   font-size: 15px;
