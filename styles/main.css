@@ -87,9 +87,15 @@
 
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
-
 }
-/**/
+/*Media query*/
+@media only screen and (max-width: 480px) {
+  .logo, .banner, .sidebar {
+    margin: 1% 0 1% 0%;
+    width: 100%;
+  }
+}
+/*header with picture*/
 #site-header {
   background-image: url(../images/candles-and-towel.jpg);
   background-repeat: no-repeat;
@@ -98,24 +104,18 @@
   font-size: 30px;
   padding: 30px;
 }
-
-.article {
-
-}
 body {
   background-color: #fff;
   
 }
-@media only screen and (max-width: 480px) {
-  .logo, .banner, .sidebar {
-    margin: 1% 0 1% 0%;
-    width: 100%;
-  }
+h3 {
+  text-align: center;
+
 }
 p {
   font-size: 15px;
-  margin-left: 45px;
-  max-width: 80%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 /*links*/
 a {
