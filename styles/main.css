@@ -11,6 +11,9 @@
   border: 5px solid #a08841;
   border-bottom: 10px solid #a08841;
 }
+twelve {
+  border: 5px solid #a08841;
+}
 /*From Skeleton css*/
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -132,8 +135,8 @@ div {
 }
 p {
   font-size: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 /*links*/
 a {
