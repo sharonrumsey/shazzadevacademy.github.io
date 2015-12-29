@@ -1,3 +1,6 @@
+body {
+  margin: 2% 10% 10% 10%;
+}
 header {
   background-image: url(../images/candles-and-towel.jpg);
   background-repeat: no-repeat;
@@ -33,11 +36,18 @@ p {
 }
 /*links*/
 a {
-  color: purple;
-  text-decoration: none;
-  font-size: 15px;
   text-align: center;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  background: #a08841;
+  font-size: 14px;
+  color: #ededed;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all ease .3s;
+          transition: all ease .3s;
 }
+
 a:hover {
   color: red;
 }
