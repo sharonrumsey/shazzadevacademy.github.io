@@ -14,10 +14,9 @@ h3 {
   font-family: 'IM Fell Great Primer', serif;
   margin-top: 20px;
 }
-.navigation {
+/*nav {
   font-size: 5px;
-  margin-left: 0;
-}
+}*/
 div {
   -webkit-column-rule-color: #ff0000; /* Chrome, Safari, Opera */
   -moz-column-rule-color: #ff0000; /* Firefox */
@@ -27,12 +26,17 @@ div {
 p {
   font-size: 15px;
 }
+.btn {
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 12px 30px;
+}
 /*links*/
 a {
   color: purple;
   text-decoration: none;
   font-size: 15px;
-  margin-left: 20px;
+  text-align: center;
 }
 a:hover {
   color: red;
