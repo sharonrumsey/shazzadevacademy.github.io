@@ -1,5 +1,5 @@
 body {
-  margin: 2% 10% 10% 10%;
+  margin: 2% 10%;
 }
 header {
   background-image: url(../images/candles-and-towel.jpg);
@@ -24,7 +24,6 @@ div {
   -webkit-column-rule-color: #ff0000; /* Chrome, Safari, Opera */
   -moz-column-rule-color: #ff0000; /* Firefox */
   column-rule-color: #ff0000;
-  /*border: 10px solid #a08841;*/
 }
 p {
   font-size: 15px;
@@ -34,6 +33,7 @@ p {
   border-radius: 5px;
   padding: 12px 30px;
 }
+
 /*links*/
 a {
   text-align: center;
@@ -47,7 +47,10 @@ a {
   -webkit-transition: all ease .3s;
           transition: all ease .3s;
 }
-
+/*#site-footer {
+  text-align: center;
+  background: #cfd6c5;
+}*/
 a:hover {
   color: red;
 }
