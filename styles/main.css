@@ -10,6 +10,8 @@ header {
   font-size: 40px;
   padding: 100px;
   font-family: 'IM Fell Great Primer', serif;
+  min-width: 50%;
+  max-width: 80%;
 }
 h3 {
   text-align: center;
