@@ -5,6 +5,7 @@ header {
   background-image: url(../images/candles-and-towel.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   border: 10px solid #a08841;
   text-align: center;
   font-size: 40px;
@@ -19,9 +20,6 @@ h3 {
   font-family: 'IM Fell Great Primer', serif;
   margin-top: 20px;
 }
-/*nav {
-  font-size: 5px;
-}*/
 div {
   -webkit-column-rule-color: #ff0000; /* Chrome, Safari, Opera */
   -moz-column-rule-color: #ff0000; /* Firefox */
@@ -35,12 +33,14 @@ p {
   border-radius: 5px;
   padding: 12px 30px;
 }
+nav {
 
+}
 /*links*/
 a {
   text-align: center;
   outline: none;
-  display: inline-block;
+  display: inline-block center;
   text-decoration: none;
   background: #a08841;
   font-size: 14px;
@@ -49,10 +49,11 @@ a {
   -webkit-transition: all ease .3s;
           transition: all ease .3s;
 }
-/*#site-footer {
+footer {
   text-align: center;
-  background: #cfd6c5;
-}*/
+  color: black;
+
+}
 a:hover {
   color: red;
 }
