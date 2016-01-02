@@ -60,6 +60,15 @@ a:hover {
 a:visited {
   color: green;
 }
+input {
+  border: 0;
+  padding: 20px;
+  font-size: 15px;
+}
+input[type="submit"] {
+  background: #a08841;
+  color: white;
+}
 #copy {
   text-align: right;
 }
