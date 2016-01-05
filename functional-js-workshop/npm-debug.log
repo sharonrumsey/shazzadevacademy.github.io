@@ -1,0 +1,151 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'functional-javascript-workshop@latest' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'functional-javascript-workshop@latest', null ]
+7 verbose cache add spec functional-javascript-workshop@latest
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'functional-javascript-workshop@latest',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'functional-javascript-workshop',
+8 silly cache add   rawSpec: 'latest',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed functional-javascript-workshop@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for functional-javascript-workshop
+11 info addNameTag [ 'functional-javascript-workshop', 'latest' ]
+12 silly mapToRegistry name functional-javascript-workshop
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/functional-javascript-workshop
+16 verbose addNameTag registry:https://registry.npmjs.org/functional-javascript-workshop not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/functional-javascript-workshop
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 11:16:42 PM
+20 verbose request id b8a8960e79bd7e82
+21 verbose etag "B3UT4A5367HFWAEEZEN7SDTXO"
+22 http request GET https://registry.npmjs.org/functional-javascript-workshop
+23 http 304 https://registry.npmjs.org/functional-javascript-workshop
+24 verbose headers { date: 'Sun, 03 Jan 2016 10:16:42 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"B3UT4A5367HFWAEEZEN7SDTXO"',
+24 verbose headers   age: '0',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-lax1431-LAX',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1451816202.935858,VS0,VE91',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Sun, 03 Jan 2016 10:16:42 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"B3UT4A5367HFWAEEZEN7SDTXO"',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-lax1431-LAX',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1451816202.935858,VS0,VE91',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/functional-javascript-workshop from cache
+27 verbose get saving functional-javascript-workshop to /home/dev/.npm/registry.npmjs.org/functional-javascript-workshop/.cache.json
+28 silly addNameTag next cb for functional-javascript-workshop with tag latest
+29 silly addNamed functional-javascript-workshop@1.0.5
+30 verbose addNamed "1.0.5" is a plain semver version for functional-javascript-workshop
+31 silly cache afterAdd functional-javascript-workshop@1.0.5
+32 verbose afterAdd /home/dev/.npm/functional-javascript-workshop/1.0.5/package/package.json not in flight; writing
+33 verbose afterAdd /home/dev/.npm/functional-javascript-workshop/1.0.5/package/package.json written
+34 silly install resolved [ { name: 'functional-javascript-workshop',
+34 silly install resolved     version: '1.0.5',
+34 silly install resolved     description: 'The basics of functional programming in JavaScript. No libraries required.',
+34 silly install resolved     main: 'index.js',
+34 silly install resolved     bin:
+34 silly install resolved      { 'functional-javascript': 'functional-javascript.js',
+34 silly install resolved        'functional-javascript-workshop': 'functional-javascript.js' },
+34 silly install resolved     scripts: {},
+34 silly install resolved     keywords: [ 'workshopper', 'tutorial', 'lesson' ],
+34 silly install resolved     author: { name: 'Tim Oxley' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     dependencies:
+34 silly install resolved      { 'deep-eql': '^0.1.3',
+34 silly install resolved        'lorem-ipsum': '^1.0.1',
+34 silly install resolved        workshopper: '^2.6.0',
+34 silly install resolved        'workshopper-exercise': '^2.4.0' },
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+https://github.com/timoxley/functional-javascript-workshop.git' },
+34 silly install resolved     bugs: { url: 'https://github.com/timoxley/functional-javascript-workshop/issues' },
+34 silly install resolved     homepage: 'https://github.com/timoxley/functional-javascript-workshop',
+34 silly install resolved     gitHead: 'dc76865532c6262a11849d381dbad4d6dabdedc6',
+34 silly install resolved     _id: 'functional-javascript-workshop@1.0.5',
+34 silly install resolved     _shasum: 'ebbb1ce4befcb71a71cea089819140b90a65eac6',
+34 silly install resolved     _from: 'functional-javascript-workshop@latest',
+34 silly install resolved     _npmVersion: '2.14.7',
+34 silly install resolved     _nodeVersion: '4.2.2-rc.3',
+34 silly install resolved     _npmUser: { name: 'timoxley', email: 'secoif@gmail.com' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'ebbb1ce4befcb71a71cea089819140b90a65eac6',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/functional-javascript-workshop/-/functional-javascript-workshop-1.0.5.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/functional-javascript-workshop/-/functional-javascript-workshop-1.0.5.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install functional-javascript-workshop@1.0.5 into /usr/local/lib
+36 info installOne functional-javascript-workshop@1.0.5
+37 verbose installOne of functional-javascript-workshop to /usr/local/lib not in flight; installing
+38 verbose lock using /home/dev/.npm/_locks/functional-javascript-wo-0366b0291caac6b3.lock for /usr/local/lib/node_modules/functional-javascript-workshop
+39 silly install write writing functional-javascript-workshop 1.0.5 to /usr/local/lib/node_modules/functional-javascript-workshop
+40 verbose unbuild lib/node_modules/functional-javascript-workshop
+41 silly gentlyRm /usr/local/lib/node_modules/functional-javascript-workshop is being purged from base /usr/local
+42 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/functional-javascript-workshop
+43 verbose tar unpack /home/dev/.npm/functional-javascript-workshop/1.0.5/package.tgz
+44 verbose tar unpacking to /usr/local/lib/node_modules/functional-javascript-workshop
+45 silly gentlyRm /usr/local/lib/node_modules/functional-javascript-workshop is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/functional-javascript-workshop
+47 silly gunzTarPerm modes [ '775', '664' ]
+48 error tar.unpack untar error /home/dev/.npm/functional-javascript-workshop/1.0.5/package.tgz
+49 verbose unlock done using /home/dev/.npm/_locks/functional-javascript-wo-0366b0291caac6b3.lock for /usr/local/lib/node_modules/functional-javascript-workshop
+50 verbose fstream_path /usr/local/lib/node_modules/functional-javascript-workshop
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/functional-javascript-workshop'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /home/dev/workspace/shazzadevacademy.github.io/functional-js-workshop
+56 error Linux 4.2.0-22-generic
+57 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "functional-javascript-workshop@latest"
+58 error node v4.2.1
+59 error npm  v2.14.7
+60 error path /usr/local/lib/node_modules/functional-javascript-workshop
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/functional-javascript-workshop'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/functional-javascript-workshop']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/local/lib/node_modules/functional-javascript-workshop',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/local/lib/node_modules/functional-javascript-workshop',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/functional-javascript-workshop
+68 silly gentlyRm /usr/local/lib/node_modules/functional-javascript-workshop is being purged from base /usr/local
+69 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/functional-javascript-workshop
