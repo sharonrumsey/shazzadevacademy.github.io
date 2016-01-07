@@ -42,22 +42,22 @@ $("#main").append(bio.name + " ")
           .append(bio.github)
           .append(bio.location)
           .append(bio.picture)
-var work = {
-  "position" : "Allocations and Accounts Manager",
-  "employer" : "Watkins Group",
-  "years_worked" : "From June 2015 to January 2016",
-  "city" : "Company located in Christchurch, New Zealand although I worked from home in Wellington",
-}
-$("#main").append(work.position + " ")
-          .append(work.employer + " ")
-          .append(work.years_worked + " ")
-          .append(work.city + " ")
+var work = {};
+  work.position = "Allocations and Accounts Manager";
+  work.employer = "Watkins Group";
+  work.years_worked = "From June 2015 to January 2016";
+  work.city = "Company located in Christchurch, New Zealand although I worked from home in Wellington";
 
-var education = {
-  "school" : "University of Evansville",
-  "attended" : "Graduated Bachelor's in 1985 and Master's in 1987",
-  "school_city" : "Evansville, Indiana in USA",
-}
-$("#main").append(education.school + " ")
-          .append(education.attended + " ")
-          .append(education.school_city + " ")
+$("#main").append(work["position"]);
+$("#main").append(work["employer"]);
+$("#main").append(work["years_worked"]);
+$("#main").append(work["city"]);
+
+var education = {};
+  education.school = "University of Evansville";
+  education.attended  = "Graduated Bachelor's in 1985 and Master's in 1987";
+  education.school_city = "Evansville, Indiana in USA";
+
+$("#main").append(education["school"]);
+$("#main").append(education["attended"]);
+$("#main").append(education["school_city"]);
