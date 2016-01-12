@@ -46,7 +46,7 @@ var work = {
     {
       "employer" : "Juneau Alliance for Mental Health",
       "title" : "Case Manager II",
-      "location" : "Juneau, Alaska in USA",
+      "location" : "Juneau, Alaska USA",
       "dates" : "From 1991 to 1996",
       "description" : "Worked with individuals with chronic mental illness in an out-patient setting.  Assisted individuals with linkage to community services and housing.  Worked to help people laive in the community and to assist them during periods of acute episodes in hopes that a psychiatric hospitalization may be avoided.  Provided testimony in court for individuals requiring extended hospital stays.  Oversaw the medication clinic with psychiatrist.  Acted as Clinical Supervisor during periods when supervisor of case management was away.  Assigned hospital privliges to review and assess clients being treated in hospital and over view of other case management documentation while client on mental health unit."
     },
@@ -73,6 +73,22 @@ var work = {
     }
   ]
 }
+
+var projects = {
+  "projects" : [
+    {
+    "title" : "Stained Glass",
+    "dates" : "2000 - 2001",
+    "description" : "Attended course with Wellington High School Community Course in stained glass."
+    },
+    {
+    "title" : "Evan rumsey",
+    "dates" : "6th October 2001",
+    "description" : "Gave birth to my wonderful son."
+    }
+  ]
+}
+
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
@@ -116,3 +132,45 @@ $(document).click(function(loc){
   var y = loc.pageY;
   logClicks(x,y);
 });
+
+function locationizer(work_obj) {
+  var locationArray = [];
+
+  for (job in work_obj.jobs) {
+    var newLocation = work_obj.jobs[job].location;
+    locationArray.push(newLocation);
+  }
+  return locationArray;
+}
+
+function inName(name) {
+    name = name.trim().split(" ");
+    console.log(name);
+    name[1] = name[1].toUpperCase();
+    name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase;
+
+    return name[0] + " " + name[1];
+}
+$('#main').append(internationalizeButton);
+
+projects.display = function() {
+  for (project in project.projects) {
+    $("#projects").append(HTMLprojectStart);
+
+    var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+      $(".project-entry:last").append(formattedTitle);
+
+    var formattedDates = HTMLprjectDates.replace("%data%", projects.projects[project].dates);
+      $(".project-entry:last").append(formattedDates);
+
+    var formattedDescription = HTMLprjectDescription.replace("%data%", projects.projects[project].description);
+      $(".project-entry:last").append(formattedDescription);
+
+    if(projects.projects[project].images.length > 0) {
+      for (image in projects.projects[project].images) {
+        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+        $(".project-entry:last").append(formattedImage);
+      }
+    }
+  }
+}
