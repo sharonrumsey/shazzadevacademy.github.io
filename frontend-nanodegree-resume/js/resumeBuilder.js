@@ -7,10 +7,10 @@ var bio = {
     "github" :"Github: shazzadevacademy ",
     "location" : "Location: Wellington, New Zealand "
   },
-  "welcome_message" : "Hire Me!",
+  "welcomeMessage" : "Hire Me!",
   "skills" : ["Awesome" , " Hope to be Programmer", "JavaScript Wannabe", "Wife & Mummy"],
-  "picture" : "<img src='../frontend-nanodegree-resume/images/sharon.jpg'>"
-}
+  "pic" : "/frontend-nanodegree-resume/images/sharon.jpg"
+};
 
 var education = {
   "school" : "University of Evansville",
@@ -18,7 +18,7 @@ var education = {
   "major" : "Clinical Psychology",
   "school_city" : "Evansville, Indiana USA",
   "url": "https://www.evansville.edu/"
-}
+};
 
 var work = {
   "jobs" : [
@@ -72,7 +72,7 @@ var work = {
       "description" : "Worked with sexually abused and neglected youth in their daily activities and caring for them as a surrogate parent."
     }
   ]
-}
+};
 
 var projects = {
   "projects" : [
@@ -87,13 +87,34 @@ var projects = {
     "description" : "Gave birth to my wonderful son."
     }
   ]
-}
+};
+
+// bio.dipslay = function() {
+//   displayBio();
+//  };
+
+// function displayBio() {
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedbioPic = HTMLbioPic.replace("%data%", bio.picture);
+var formattedwelcomeMess = HTMLwelcomeMsg.replace ("%data%", bio.welcomeMessage)
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
+$("#header").append(formattedRole);
+$("#header").append(formattedName);
+$("#header").append(formattedwelcomeMess);
+$("#header").append(formattedbioPic);
+
+// var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile );
+// var formattedemail = HTMLemail.replace("%data%", bio.contacts.email );
+// var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
+// var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog );
+
+// $("#header").append(formatedMobile);
+// $("#header").append(formatedEmail);
+// $("#header").append(formatedGithub);
+// $("#header").append(formattedLocation);
+
 
 if(bio.skills.length > 0) {
       $("#header").append(HTMLskillsStart);
@@ -108,6 +129,10 @@ if(bio.skills.length > 0) {
       formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
       $("#skills").append(formattedSkill);
     }
+  }
+}
+
+// bio.display();
 
 function displayWork() {
 for (job in work.jobs) {
@@ -154,23 +179,23 @@ function inName(name) {
 $('#main').append(internationalizeButton);
 
 projects.display = function() {
-  for (project in project.projects) {
-    $("#projects").append(HTMLprojectStart);
+ for (project in projects.projects) {
+  $("#projects").append(HTMLprojectStart);
 
-    var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-      $(".project-entry:last").append(formattedTitle);
+  var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+  $(".project-entry:last").append(formattedDates);
 
-    var formattedDates = HTMLprjectDates.replace("%data%", projects.projects[project].dates);
-      $(".project-entry:last").append(formattedDates);
+  var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+  $(".project-entry:last").append(formattedDescription);
 
-    var formattedDescription = HTMLprjectDescription.replace("%data%", projects.projects[project].description);
-      $(".project-entry:last").append(formattedDescription);
-
-    if(projects.projects[project].images.length > 0) {
-      for (image in projects.projects[project].images) {
-        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-        $(".project-entry:last").append(formattedImage);
-      }
+  if (projects.projects[project].images.length > 0) {
+    for (image in projects.projects[project].images) {
+      var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+      $(".project-entry:last").append(formattedImage);
     }
   }
+ } 
 }
+
+// Map
+$("#mapDiv").append(googleMap);
