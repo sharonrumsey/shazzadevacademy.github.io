@@ -7,19 +7,22 @@
     <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
   </head>
   <!-- this is a comment. -->
-  <body>
+  <body onload="document.onkeypress=keyhandler; init();">
     <h1>JavaScript Racer Game</h1>
-    <h2>Lets Go <em>RACING</em></h2>
-    <h3>Week 7 Sprint</h3>
+      <h2>Lets Go <em>RACING</em></h2>
+        <h3>Week 7 Sprint</h3>
     
     <table class="racer_table">
       <tr id="player1_strip">
         <td class="active"></td>
       </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
       <tr id="player2_strip">
         <td class="active"></td>
       </tr>
-  </table>
+    </table>
     
     <!-- this is a comment. -->
     <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>

@@ -1,8 +1,10 @@
+* {
+  margin: 30px;
+}
 .racer_table td {
   background-color: yellow;
-  height: 50px;
-  width: 50px;
-  margin: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 .racer_table td.active {
@@ -14,8 +16,8 @@
 }
 
 td {
-  border: 10px solid #96ccb5;
-  margin: 50px;
+  /*border: 5px solid #96ccb5;*/
+  
 }
 #player1_strip {
  
