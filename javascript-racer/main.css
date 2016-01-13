@@ -1,28 +1,42 @@
-* {
-  margin: 30px;
+body {
+  margin: 25px 20px 25px 20px;
 }
-.racer_table td {
-  background-color: yellow;
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 25px;
+  text-align: center;
+}
+/*racing lanes*/
+.container {
+  background-color: white;
+  width: 100%;
+  height: 34px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  clear: both;
+  margin-bottom: 40px;
+}
+
+.player {
   height: 30px;
   width: 30px;
+  float: left;
 }
 
-.racer_table td.active {
-  background-color: green;
+#player1 {
+  background: red;
 }
 
-.racer_table  {
-  margin: 40px;
+#player2 {
+  background: green;
 }
-
-td {
-  /*border: 5px solid #96ccb5;*/
+img {
+  width: 49%;
   
-}
-#player1_strip {
- 
-}
-
-#player2_strip {
-
 }

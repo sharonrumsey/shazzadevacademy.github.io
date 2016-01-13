@@ -7,9 +7,9 @@ function keyhandler(event) {
   }
 }
 
-//Moving the player on the table
+//Moving the player on the table - inserting space behind keystroke
 function advancePlayer(player) {
-  
+
 }
 
 //Build race track
@@ -19,11 +19,7 @@ for ( i = 1; i < trackLength; i++ ) {
   document.getElementById("player2_strip").append(document.createElement( "td"));
 };
 
-
-// Option length of track
-
-
 //Reset Track
 
 
-//Notify who wins 
+//Notify who wins with the words You Win - BARKERS!
