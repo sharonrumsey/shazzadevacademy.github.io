@@ -16,27 +16,30 @@ h2, h3 {
   background-color: white;
   width: 100%;
   height: 34px;
-  margin: 10px;
+  /*margin: 10px;*/
   box-sizing: border-box;
   border: 2px solid black;
-  clear: both;
+  /*clear: both;*/
   margin-bottom: 40px;
 }
 
-.player {
+.racer {
   height: 30px;
-  width: 30px;
+  width: 4%;
   float: left;
 }
 
-#player1 {
+#racer0 {
   background: red;
 }
 
-#player2 {
+#racer1 {
   background: green;
 }
 img {
   width: 49%;
   
+}
+#msg {
+  color: red;
 }

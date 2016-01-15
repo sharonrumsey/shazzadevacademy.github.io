@@ -7,15 +7,18 @@
     <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
   </head>
   <!-- initialize keypress in html -->
-  <body onload="document.onkeypress=keyhandler; init();">
+  <body onload ="init();">
     <h1>JavaScript Racer Game</h1>
       <h2>Let's Go <em>....RACING.....!</em></h2>
           <div class="container">
-            <div id="player1" class="player"></div>
+            <div id="racer0" class="racer"></div>
           </div>
           <div class="container">
-            <div id="player2" class="player"></div>
+            <div id="racer1" class="racer"></div>
           </div>
+      <h2 id="msg"></h2>
+      <h2>Instructions</h2>
+        <h3>Red racer click on Q and Green racer click on P</h3>
           <div class="row">
             <img src="dogleft.jpg"></a>
             <img src="dogright.jpg"></a>
