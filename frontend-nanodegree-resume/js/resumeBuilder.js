@@ -1,16 +1,56 @@
 var bio = {
   "name" : "Sharon Rumsey",
   "role" : "Web Developer",
-  "contacts" : {
-    "mobile" : "Mobile: 027-240-1705 ",
-    "email" : "Email: sharon@rumsey.nz ",
-    "github" :"Github: shazzadevacademy ",
-    "location" : "Location: Wellington, New Zealand "
-  },
+  "contacts" : [
+    {
+      "mobile" : "Mobile: 027-240-1705 ",
+      "email" : "Email: sharon@rumsey.nz ",
+      "github" :"Github: shazzadevacademy ",
+      "twitter" : "@DevShazza",
+      "location" : "Location: Wellington, New Zealand "
+    }
+  ],
   "welcomeMessage" : "Hire Me!",
-  "skills" : ["Awesome" , " Hope to be Programmer", "JavaScript Wannabe", "Wife & Mummy"],
-  "pic" : "/frontend-nanodegree-resume/images/sharon.jpg"
+  "biopic" : "sharon.jpg", //url
+  "skills" : ["Awesome" , " Hope to be Programmer", "JavaScript Wannabe", "Wife & Mummy"]
 };
+
+// bio.display = function() {
+  var formattedName = HTMLheaderName.replace("%data%", bio.name);
+  var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+  var formattedbioPic = HTMLbioPic.replace("%data%", bio.picture);
+  var formattedwelcomeMess = HTMLwelcomeMsg.replace ("%data%", bio.welcomeMessage)
+  // var formattedmobile = HTMLmobile.replace("%data%", bio.contacts.mobile );
+  // var formattedemail = HTMLemail.replace("%data%", bio.contacts.email );
+  // var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
+  var formattedBlog = HTMLblog.replace("%data%", bio.contacts.twitter );
+ // }
+
+$("#header").append(formattedName);
+$("#header").append(formattedRole);
+
+$("#header").append(formattedwelcomeMess);
+$("#header").append(formattedbioPic);
+// $("#header").append(formatedmobile);
+// $("#header").append(formatedEmail);
+// $("#header").append(formatedGithub);
+// $("#header").append(formattedLocation);
+
+if(bio.skills.length > 0) {
+      $("#header").append(HTMLskillsStart);
+
+      var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+
+      $("#skills").append(formattedSkill);
+      formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+      $("#skills").append(formattedSkill);
+      formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+      $("#skills").append(formattedSkill);
+      formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+      $("#skills").append(formattedSkill);
+    };
+
+// displayBio();
 
 var education = {
   "school" : "University of Evansville",
@@ -74,66 +114,6 @@ var work = {
   ]
 };
 
-var projects = {
-  "projects" : [
-    {
-    "title" : "Stained Glass",
-    "dates" : "2000 - 2001",
-    "description" : "Attended course with Wellington High School Community Course in stained glass."
-    },
-    {
-    "title" : "Evan rumsey",
-    "dates" : "6th October 2001",
-    "description" : "Gave birth to my wonderful son."
-    }
-  ]
-};
-
-// bio.dipslay = function() {
-//   displayBio();
-//  };
-
-// function displayBio() {
-
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedbioPic = HTMLbioPic.replace("%data%", bio.picture);
-var formattedwelcomeMess = HTMLwelcomeMsg.replace ("%data%", bio.welcomeMessage)
-
-$("#header").append(formattedRole);
-$("#header").append(formattedName);
-$("#header").append(formattedwelcomeMess);
-$("#header").append(formattedbioPic);
-
-// var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile );
-// var formattedemail = HTMLemail.replace("%data%", bio.contacts.email );
-// var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
-// var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog );
-
-// $("#header").append(formatedMobile);
-// $("#header").append(formatedEmail);
-// $("#header").append(formatedGithub);
-// $("#header").append(formattedLocation);
-
-
-if(bio.skills.length > 0) {
-      $("#header").append(HTMLskillsStart);
-
-      var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-
-      $("#skills").append(formattedSkill);
-      formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
-      $("#skills").append(formattedSkill);
-      formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-      $("#skills").append(formattedSkill);
-      formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
-      $("#skills").append(formattedSkill);
-    }
-  }
-}
-
-// bio.display();
-
 function displayWork() {
 for (job in work.jobs) {
   $("#workExperience").append(HTMLworkStart);
@@ -151,6 +131,40 @@ for (job in work.jobs) {
   }
 }
 displayWork();
+
+var projects = {
+  "projects" : [
+    {
+    "title" : "Stained Glass",
+    "dates" : "2000 - 2001",
+    "description" : "Attended course with Wellington High School Community Course in stained glass."
+    },
+    {
+    "title" : "Evan rumsey",
+    "dates" : "6th October 2001",
+    "description" : "Gave birth to my wonderful son."
+    }
+  ]
+};
+
+projects.display = function() {
+ for (project in projects.projects) {
+  $("#projects").append(HTMLprojectStart);
+
+  var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+  $(".project-entry:last").append(formattedDates);
+
+  var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+  $(".project-entry:last").append(formattedDescription);
+
+  if (projects.projects[project].images.length > 0) {
+    for (image in projects.projects[project].images) {
+      var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+      $(".project-entry:last").append(formattedImage);
+    }
+  }
+ } 
+}
 
 $(document).click(function(loc){
   var x = loc.pageX;
@@ -178,24 +192,7 @@ function inName(name) {
 }
 $('#main').append(internationalizeButton);
 
-projects.display = function() {
- for (project in projects.projects) {
-  $("#projects").append(HTMLprojectStart);
 
-  var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-  $(".project-entry:last").append(formattedDates);
-
-  var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-  $(".project-entry:last").append(formattedDescription);
-
-  if (projects.projects[project].images.length > 0) {
-    for (image in projects.projects[project].images) {
-      var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-      $(".project-entry:last").append(formattedImage);
-    }
-  }
- } 
-}
 
 // Map
 $("#mapDiv").append(googleMap);
