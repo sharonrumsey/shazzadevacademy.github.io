@@ -36,7 +36,3 @@ function moveRacer(n) {
   //to test
   console.log("moveRacer " + n.toString() + " " + racer[n].pos.toString() + "%");
 }
-
-
-
-
