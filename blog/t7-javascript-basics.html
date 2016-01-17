@@ -6,6 +6,9 @@
     * {
       margin: 20px;
     }
+    h1 {
+      text-align: center;
+    }
     li {
       font-size: 25px;
       color: #131fa3;
@@ -50,10 +53,24 @@
           <hr>
       <li>With an example, explain the difference between 'functional' and 'object oriented' programming.</li>
         <p>
-          OBJECT ORIENTED PROGRAMMING - are good when you have a fixed set of operations on things and as your code evolves you can add new things though classes - leaving existing classes alone.  Basically asking the question of 'What can I do with the data?' 
+          OBJECT ORIENTED PROGRAMMING - are good when you have a fixed set of operations on things and as your code evolves you can add new things though classes - leaving existing classes alone.  Basically asking the question of 'What can I do with the data?'  
         </p>
         <p>
-          FUNCTIONAL PROGRAMMING - are good when you have a fixed set of things and as your code evolves you can add new operations on existing things.  Basically asking the question 'How is the data constructed?'
+          As per Stackoverflow: Object-oriented languages are good when you have a fixed set of <em>operations on things,</em> and as your code evolves, you primarily add new things.  This can be accomplished by adding new classes which implement existing methods, and the exsting classes are left alone.
+        </p>
+        <p>
+          As per Wikipedia: OOP is based on the concept of objects, whihch are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.  A distinguishing feature of objects is that an object's procedures can access and often modify the data fields of the object wth which they are associated.  In OO</p>
+        <p>
+          FUNCTIONAL PROGRAMMING - are good when you have a fixed set of things and as your code evolves you can add new operations on existing things.  Basically asking the question 'How is the data constructed?'  The advantages ae the increased readability and more easily maintained.  
+        </p>
+        <p>
+          As per Stackoverflow: Functional languages are good when you have a fixed set of <em>things</em>, and as your code evolves, you primarily add new <em>operations</em> on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
+        </p>
+        <p>
+          As per Wikipedia: In functional code, the output value of a function depends only on the arguments that are input to the function, so calling a function f twice with the same value for an argument x will produce the same result f(x) each time. Eliminating side effects, i.e. changes in state that do not depend on the function inputs, can make it much easier to understand and predict the behavior of a program, which is one of the key motivations for the development of functional programming. 
+        </p>
+        <p>
+          So for an example - I searched for ideas of this and found <a href="http://www.codenewbie.org/blogs/object-oriented-programming-vs-functional-programming">The Codenewbie Blog</a>- it gave a good example of how FP uses less code and doesn't fiddle with previous arrays data when developing new arrays.  At the bottom he refers to Michael fogus observation that FP works well when dealing with data about people, but OOP works better when our data is about people. 
         </p>
           <hr>
     </ol>
