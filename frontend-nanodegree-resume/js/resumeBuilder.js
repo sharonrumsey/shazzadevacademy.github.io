@@ -9,8 +9,8 @@ var bio = {
             "location" : "Wellington, New Zealand "
           },
         "welcomeMsg" : "Hire Me Please!",
-        "bioPic" : "images/sharon.jpg",
-        "skills" : ["Awesome", " Hope to be Programmer", "JavaScript Wannabe", "Wife & Mummy"]
+        "bioPic"     : "images/sharon.jpg",
+        "skills"     : ["Awesome", " Hope to be a Programmer", "JavaScript Wannabe", "Wife & Mummy"]
   }
 
   var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -187,7 +187,6 @@ function displayProjects() {
         //     $(".project-entry:last").append(formattedImage);
         // }
       }
-    
 };
 displayProjects();
 
