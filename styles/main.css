@@ -1,52 +1,55 @@
-body.trees {
-  background: url("../Trees.png");
-}
-body.green {
-    background-color: #67dba8;
-}
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
 body {
-  font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+  padding: 25px;
 }
-h1 {
-  color: #418877;
-  text-align: center;
-  border: 1px solid black;
-  background-color: #F2DAC6;
-  width: 400px;
-  margin-left: 20px;
-  font-weight: bold;
-  font-size: 50px;
+
+.jumbotron {
+      text-align: center;
+      font-size: 50px;
+    }
+
+button.click {
+  border: 10px solid green;
+  background-color: #3498b;
+  padding: 15px;
 }
-h2 {
+
+h2, h3 {
   margin-left: 50px
 }
 #main {
   font-size: 20px;
-  margin-top: 0px;
+  /*margin-top: 0px;*/
   margin-left: 20px;
-  width: 500px;
+  width: 80%;
 }
+hr {
+  display: block;
+  height: 3px;
+  border: 0;
+  border-top: 3px double #666;
+  margin: 1em 0;
+  padding: 0;
+}
+/*picture*/
 .Sharon {
-  box-shadow: 10px 10px 10px #418877;
-  float: right;
   margin-right: 100px;
   border-radius: 30px;
-  border-color: #418877;
-  border-style: solid;
 }
+.click {
+  font-size: 25px;
+}
+/*links*/
 a {
   text-decoration: none;
+  font-size: 20px;
+}
+div.link a:hover {
+  color: red;
 }
 p.links {
   margin-left: 20px;
 }
+
 footer {
   margin-left: 20px;
 }

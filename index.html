@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Sharon's Blog</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
-  <body class="trees">
+  <body>
     <header>
-      <h1>Sharon Rumsey</h1>
+       <!-- Single button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Links <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <h1 class="jumbotron">Sharon Rumsey</h1>
     </header>
     <main>
-      <img class="Sharon" src="sharon.jpg" alt="Picture of Sharon">
+      <button class="click"><img class="Sharon" src="sharon.jpg" alt="Picture of Sharon">Click ME!</button>
       <div id="main">
         <h2>Where I live</h2>
           <p>
             I live in Lyall Bay in Wellington and have since 1996 when I moved here from Juneau, Alaska.  Happy to be a Kiwi since 2011.
-          </p>
+          </p><hr>
         <h2>Family Life</h2>
           <p>
             I live with my husband, John and my 14 year old son, Evan and our very furry cat, Shyla.
-          </p>
+          </p><hr>
         <h2>Why Dev Academy?</h2>
           <p>
             Have been looking at the Dev Academy website off and on for 6 months wanting to take the plunge and learn new skills.  So, finally did.  Hope to one day work with a team of developers and also do some contract work as well.
-          </p>
+          </p><hr>
       </div>
+      <!-- <button type="">Change Background Color</button><hr> -->
     </main>
-    <!-- sprint-4 homework from waffle -->
-      <p class="links">Additional Blogs for Kakapo Cohort</p>
+    <!-- links -->
+    <div class="link">
+      <h3>Additional Blogs for Kakapo Cohort</h3>
         <ul>
           <li><a href="blog/c4-reflection-blog.html">Reflection</a></li>
           <li><a href="blog/c4-time-and-habits-blog.html">Time and Habits</a></li>
@@ -40,6 +62,12 @@
           <li><a href="blog/c8-empathy.html">Week 8 Cultural Blog</a></li>  
           <li><a href="blog/t5-problem-solving.html">Week 8 Technical Blog</a></li>    
         </ul>
+      </div>
     <footer>&copy; copyright Rumsey.NZ</footer>
+    <script src="sharon.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
