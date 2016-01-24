@@ -40,16 +40,17 @@ hr {
 }
 /*cat picture*/
 .hover_img a { 
-  position: relative;
+  position: fixed;
   width: 450px;
   height: 450px;
 }
 .hover_img a span { 
-  position: static; 
-  display:none; z-index:99; 
+  position: absolute; 
+  display: none; 
+  z-index: 99; 
 }
 .hover_img a:hover span { 
-  display:block; 
+  display: block; 
 }
 /*links*/
 a {
