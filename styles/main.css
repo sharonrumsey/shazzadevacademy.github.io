@@ -16,9 +16,9 @@ button.click {
 h2, h3 {
   margin-left: 50px
 }
+
 #main {
   font-size: 20px;
-  /*margin-top: 0px;*/
   margin-left: 20px;
   width: 80%;
 }
@@ -37,6 +37,19 @@ hr {
 }
 .click {
   font-size: 25px;
+}
+/*cat picture*/
+.hover_img a { 
+  position: absolute;
+  width: 450px;
+  height: 450px;
+}
+.hover_img a span { 
+  position:absolute; 
+  display:none; z-index:99; 
+}
+.hover_img a:hover span { 
+  display:block; 
 }
 /*links*/
 a {

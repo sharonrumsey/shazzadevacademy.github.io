@@ -1,4 +1,4 @@
-document.querySelector("button.click").addEventListener("click", function() {
+document.querySelector("button.click").addEventListener("click", function () {
   document.body.style.background = randColor();
 })
 
