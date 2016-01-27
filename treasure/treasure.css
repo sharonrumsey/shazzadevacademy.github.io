@@ -1,0 +1,11 @@
+body {
+  margin: 45px;
+  background-color: #58c47c;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+#treasure {
+   vertical-align: middle;
+   text-align: center;
+}
