@@ -1,3 +1,5 @@
+
+
 function userChoice(pick) {
   if(pick == Math.floor(Math.random() * 3)) {
     alert("You win the treasure");
@@ -6,17 +8,11 @@ function userChoice(pick) {
   }
 }
 
+jAlert ( {
+  
+    headingText   : "Attention!"  ,  // Important 
+    contentText   : "Dare to find the treasure!" 
+      
+  }, "bottom" ) ;
 
-// $(document).ready(function() 
-// {
 
-// })
-
-
-// function userChoice(pick) {
-//   if(pick == Math.floor(Math.random() * 3)) {
-//     $.jAlert("You win the treasure" + (img src="gold-chest.jpg");
-//   } else {
-//     alert("You lose - time to walk the plank!");
-//   }
-// }

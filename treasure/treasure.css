@@ -9,3 +9,8 @@ h1, h2, h3 {
    vertical-align: middle;
    text-align: center;
 }
+.jAlertsMessage, .jAlertsMessage h2, .jAlertsMessage p, .jAlertsButton {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+  }
+  .jAlertsMessage h2 { font-size: 22px; }
