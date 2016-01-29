@@ -1,0 +1,32 @@
+body {
+  margin: 45px;
+  background-color: green;
+  text-align: center;
+  font-size: 50px;
+}
+button {
+  padding: 30px;
+  font-size: 25px;
+}
+div {
+  margin-bottom: 25px;
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+  display: inline-block;
+  position: relative;
+}
+
+#red {
+  background-color: #FF0000;
+}
+#blue {
+  background-color: #0000FF;
+ 
+}
+#yellow {
+  background-color: #E2BE22;
+}
+#green {
+  background-color: #008800;
+}
