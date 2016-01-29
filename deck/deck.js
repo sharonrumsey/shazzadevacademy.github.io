@@ -1,10 +1,28 @@
-//  ComputerBot picks a number at random 1 to 10
+var computerBot = Math.floor(Math.random() * 100) + 1;
+var userGuess;
+var totalGuess = 0;
+playerButton.disabled = false;
+
+//input and output fields
+var playerInput = document.querySelector("#input");
+var output = document.querySelector("#output");
 
 
-// userChoice prompted for a number to guess
+//Main function
+function Main() {
+  totalGuesses = totalGuesses +=1;
+  userGuess = parseInt(input.value);
+    if (userGuess > computerBot) {
+      output.innerHTML = "Too high. You have made " + totalGuesses + " guesses.";
+    } else if (userGuess < computerBot) {
+        output.innerHTML = "Too low. You have made " + totalGuesses + " guesses.";
+    } else if (userGuess === computerBot) {
+      output.innerHTML = "Yes - You Guessed Right!";
+    }
 
-
-//  document.write win or lose
-
-
-//reload the page
+// check guesses
+if(totalGuesses >= 6) {
+  output.innerHTML = "<h3>You have used your 6 guesses<br/>The number is</h3> " + computerBot;
+  playerButton.disabled = true;
+  }
+}
