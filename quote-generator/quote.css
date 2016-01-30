@@ -3,9 +3,13 @@ body {
   background-color: #CDFFE9;
   text-align: center;
 }
-.quote {
-  /*position: relative;
-  z-index: 2;*/
-  font-family: italic;
-  display: inline-block;
+h1 {
+  font-family: 'Droid Serif', serif;
+  font-size: 5em;
+}
+
+.quotes {
+  font-family: 'Libre Baskerville', serif;
+  padding: 35px;
+  font-size: 35px;
 }

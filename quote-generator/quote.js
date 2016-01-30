@@ -15,5 +15,6 @@ function quotable() {
     {quote: "\"Peace is its own reward\"", name: "Mahatma Gandhi"}
   ];
   var random = quotes[Math.floor(Math.random() * quotes.length)];
-  $(".quotes").text(random.quote + " by Author: " + random.name);
+  // $(".quotes").text(random.quote + " by Author: " + random.name);
+  $(".quotes").text(random.quote + " by: " + random.name);
   };
