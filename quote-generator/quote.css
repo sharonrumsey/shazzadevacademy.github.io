@@ -1,0 +1,10 @@
+body {
+  margin: 45px;
+}
+h1 {
+  text-align: center;
+}
+.class, .quote {
+  font-family: italic;
+  display: inline-block;
+}
