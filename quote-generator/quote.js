@@ -16,6 +16,5 @@ function quotable() {
   ];
   var random = quotes[Math.floor(Math.random() * quotes.length)];
     $(".quote").text(random.quote);
-    $(".author").text(random.name);
-
+    $(".author").text(random.name)
   };
