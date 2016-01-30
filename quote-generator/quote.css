@@ -7,9 +7,15 @@ h1 {
   font-family: 'Droid Serif', serif;
   font-size: 5em;
 }
-
 .quotes {
   font-family: 'Libre Baskerville', serif;
   padding: 35px;
   font-size: 35px;
+  text-align: center;
+  border: 3px solid red;
+  margin: 20px;
+}
+button {
+  background-color: #FFCDE3;
+  padding: 15px;
 }

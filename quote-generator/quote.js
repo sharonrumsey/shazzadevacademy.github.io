@@ -1,6 +1,6 @@
 function quotable() {
   var quotes = [
-    {quote: "\"You're only given a littles spark of madness.  You mustnt lose it.\"", name: "Robin Williams"},
+    {quote: "\"You're only given a littles spark of madness.  You mustn't lose it.\"", name: "Robin Williams"},
     {quote: "\"I do well with snakes and I can't dance\"", name: "Robin Williams"},
     {quote: "\"I like coffee because it gives me the illusion that I might be awake\"", name: "Lewis Black"},
     {quote: "\"When it comes to idiots, America's got more than it's fair share. If idiots were energy, it would be a source that would never run out\"", name: "Lewis Black"},
@@ -15,8 +15,6 @@ function quotable() {
     {quote: "\"Peace is its own reward\"", name: "Mahatma Gandhi"}
   ];
   var random = quotes[Math.floor(Math.random() * quotes.length)];
-  // $(".quotes").text(random.quote + " by Author: " + random.name);
-  // $(".quotes").text(random.quote + " by: " + random.name);
     $(".quote").text(random.quote);
     $(".author").text(random.name);
 
